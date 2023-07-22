@@ -1,0 +1,84 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5.5rem;
+    background-color: var(--seccond-color);
+}
+
+.header__logo img{
+    width: 14.6rem;
+}
+
+.header__menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 28.5rem;
+}
+
+.header__menu  a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: unset;
+    cursor: pointer;
+}
+.header__menu li:hover{
+    transform: scale(1.2);
+}
+    
+
+/* Toogle dark mode */
+.toogle-btn{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+#checkbox {
+    display: none;
+  }
+  
+  .switch {
+    position: relative;
+    width: 6.0rem;
+    height: 6.0rem;
+    background-color: rgb(99, 99, 99);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(126, 126, 126);
+    box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+  }
+  
+  .powersign {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    border: .4rem solid rgb(48, 48, 48);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .powersign::before {
+    content: "";
+    width: .8rem;
+    height: 100%;
+    background-color: rgb(99, 99, 99);
+    position: absolute;
+    top: -60%;
+    z-index: 2;
+  }
+  
+  .powersign::after {
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    top: -60%;
+    z-index: 3;
+  }
